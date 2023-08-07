@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Geek</title>
+    <link href="../assets/css/reset.css" rel="stylesheet" />
+    <link href="../assets/css/styles.css" rel="stylesheet" />
+    <link href="../assets/css/footer.css" rel="stylesheet" />
+    <link href="../assets/css/productos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <a href="../index.html"><img src="../assets/img/Logo.svg" alt="Logo Alura Geek" class="logo" /></a>
+        <div class="barra-de-busqueda">
+            <input type="search" class="buscador" alt="Que deseas buscar?" placeholder="Qué deseas buscar?"
+                data-buscador />
+            <img src="../assets/img/lupa.svg" class="lupa" />
+        </div>
+        <img src="../assets/img/lupa.svg" class="lupa-mobile" />
+
+    </div>
+
+    </header>
+
+    <main class="todos-los-productos">
+      <section>
+        <div class="productos">
+          <h1 class="title-todos-los-productos">Todos los productos</h1>
+          <div class="agregar-producto">
+            <a
+              href="./agregar-producto.html"
+              class="boton-agregar-producto"
+              >Agregar producto</a
+            >
+          </div>
+        </div>
+                <div class="imagenes-productos imagenes-productos-todos">
+                    <div class="contenedor__producto" data-admin-productos>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./services/client-service.js"></script>
+    <script type="module" src="./controllers/admin-controller.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>

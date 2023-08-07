@@ -1,0 +1,144 @@
+
+.productos{
+    padding: 0rem 8rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-productos{
+    margin-left: .5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37.57px;
+}
+.contenedor__producto {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: no-wrap;
+}
+
+.ver-todo{
+    display: flex;
+    padding : 1rem;
+    gap: 1rem;
+    color: #2A7AE4;
+}
+
+.ver-todo-p{
+    display: inline;
+}
+
+.flecha{
+    height: 15px;
+    width: auto;
+    align-self: center;
+}
+
+.imagenes-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 8rem ;
+    margin-bottom: 1rem;
+    gap: 1rem;
+
+}
+
+.producto-texto{
+    font-size: .8rem;
+}
+
+.producto-precio{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.producto-link{
+    font-size: .8rem;
+    text-decoration: none;
+    color: #2A7AE4;
+}
+
+.todos-los-productos{
+    padding: 4rem 2rem;
+    background: #F5F5F5;
+    gap: 10px;
+}
+
+.contenedor__producto{
+    flex-wrap: wrap;
+}
+
+.title-todos-los-productos{
+    margin-bottom: 1rem;
+}
+
+.boton-agregar-producto{
+    background: #2A7AE4;
+    color: #FFFFFF;
+    padding: 16px;
+    gap: 10px;
+}
+
+.agregar-producto{
+    margin-bottom: 1.5rem;
+}
+
+
+.imagenes-productos-todos{
+    flex-wrap: wrap;
+}
+
+.producto__card__imagen{
+     height: 150px;
+    width: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 767px){
+    .productos{
+        padding: 0;
+
+    }
+    .imagenes-productos{
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 0;
+    }
+	.producto-adicional{
+		display: none;
+	}
+
+    .title-productos{
+        font-size: 22px;
+
+    }
+    .ver-todo{
+        font-size: .5rem;
+    }
+    
+    .flecha{
+        height: 10px;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .productos{
+        padding: 0 4rem;
+
+    }
+    .imagenes-productos{
+        padding: 0 4rem;
+    }
+	.producto-adicional{
+		display: none;
+	}
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Geek</title>
+    <link href="../assets/css/reset.css" rel="stylesheet" />
+    <link href="../assets/css/styles.css" rel="stylesheet" />
+    <link href="../assets/css/footer.css" rel="stylesheet" />
+    <link href="../assets/css/productos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <a href="../index.html"><img src="../assets/img/Logo.svg" alt="Logo Alura Geek" class="logo" /></a>
+        <div class="barra-de-busqueda">
+            <input type="search" class="buscador" alt="Que deseas buscar?" placeholder="Qué deseas buscar?"
+                data-buscador />
+            <img src="../assets/img/lupa.svg" class="lupa" />
+        </div>
+        <a href="./vistas/login.html" class="boton-login">LOGIN</a>
+        <img src="../assets/img/lupa.svg" class="lupa-mobile" />
+
+    </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="login__form">
+                <h2>Actualizar Producto</h2>
+                <form action="" data-form-registro>
+                    <div class="form-group">
+                        <p>URL imagen</p>
+                        <input type="text" id="imagen" data-form-imagen>
+                    </div>
+                    <div class="form-group">
+                        <p>Nombre producto</p>
+                        <input type="text" id="nombre" placeholder="Nombre del producto" required data-form-nombre>
+                    </div>
+                    <div class="form-group">
+                        <p>Precio Producto</p>
+                        <input type="number" id="precio" placeholder="Precio del producto" required data-form-precio>
+                    </div>
+                    <div class="form-group">
+                        <p>Categoria</p>
+                        <select class="select" name="categoria" id="categoria" data-form-categoria>
+                            <option value="" selected disabled>--seleccionar categoria--</option>
+                            <option value="Star wars">Star Wars</option>
+                            <option value="Consolas">Consolas</option>
+                            <option value="Diversos">Diversos</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>Descripcion del producto</p>
+                        <textarea name="mensaje" id="" cols="30" rows="10" data-form-descripcion
+                            placeholder="Descripcion del producto"></textarea>
+                    </div>
+
+                    <input class="boton" type="submit" value="Guardar Cambios">
+                </form>
+            </div>
+        </section>
+    </main>
+    <section class="footer">
+        <div class="contenido__footer container">
+            <div class="contenido__footer_info">
+                <a href="./index.html"><img class="header__logo" src="./assets/img/Logo.svg"
+                        alt="logo de alura geek"></a>
+                <ul class="footer_links">
+                    <li class="footer__enlace"><a href="./screens/error404.html">Quienes somos</a></li>
+                    <li class="footer__enlace"><a href="./screens/error404.html">Politica de privacidad</a></li>
+                    <li class="footer__enlace"><a href="./screens/error404.html">Programa de fidelidad</a></li>
+                    <li class="footer__enlace"><a href="./screens/error404.html">Nuestras Tiendas</a></li>
+                    <li class="footer__enlace"><a href="./screens/error404.html">Quiero ser franquiciado</a></li>
+                    <li class="footer__enlace"><a href="./screens/error404.html">Anuncie aqui</a></li>
+                </ul>
+            </div>
+            <div class="footer_formulario">
+                <h3 class="footer_formulario__titulo">Hable con nosotros</h3>
+                <form action="">
+                    <div class="formulario__input-container">
+                        <input name="nombre" id="nombre" class="input inputs" type="text" placeholder="" required
+                            pattern="^[\s\S]{0,40}$" data-tipo="nombre">
+                        <label class="input-label" for="nombre">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="formulario__textarea-container">
+                        <textarea name="mensaje" id="mensaje" class="textarea inputs" rows="5" type="text"
+                            placeholder="" required pattern="/^[A-Za-z0-9.]{0,120}$/" data-tipo="mensaje"></textarea>
+                        <label class="input-label" for="mensaje">Escribe tu mensaje</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <input class="boton-form" type="submit" name="enviar" id="enviar" value="Enviar Mensaje">
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="rodapie">
+        <p class="rodapie__texto">Desarrollado por Rendey Marte</p>
+        <p class="rodapie__texto">2023</p>
+    </footer>
+    <div class="biografia">Desarrollado por <span>JRendey Martes</span> 2023 </div>
+    <script type="module" src="./services/client-service.js"></script>
+    <script type="module" src="./controllers/cliente-controller.js"></script>
+    <script type="module" src="./controllers/actualizar-producto.js"></script>
+    <script type="module" src="./controllers/busqueda.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>

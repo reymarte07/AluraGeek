@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alura Geek</title>
+  <link href="../assets/css/reset.css" rel="stylesheet" />
+  <link href="../assets/css/styles.css" rel="stylesheet" />
+  <link href="../assets/css/footer.css" rel="stylesheet" />
+  <link href="../assets/css/login.css" rel="stylesheet" />
+  <link href="../assets/css/agregar-producto.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+      <a href="../index.html"><img src="../assets/img/Logo.svg" alt="Logo Alura Geek" class="logo" /></a>
+      <div class="barra-de-busqueda">
+        <input type="search" class="buscador" alt="Que deseas buscar?" placeholder="Qué deseas buscar?" data-buscador />
+        <img src="../assets/img/lupa.svg" class="lupa" />
+      </div>
+       <a href="./admin.html" class="boton-login">Menu Administrador</a>
+      <img src="../assets/img/lupa.svg" class="lupa-mobile" />
+
+    </div>
+
+  </header>
+    <main>
+      <section class="formulario">
+        <div class="formulario-login container">
+          <h2 class="formulario-login__titulo">Agregar nuevo producto</h2>
+          <form action="" class="formulario-login_form" data-form-registro>
+            <div class="formulario-login__input-container imagen">
+              <input
+                class="formulario-agregar-producto-input input-imagen"
+                type="text"
+                placeholder="URL de la imagen"
+                required
+                data-form-imagen
+              />
+                <label for="agregar__imagen__boton" class="agregar__imagen__boton__texto">Busque en su dispositivo</label>
+              <input type="file" class="agregar-imagen" id="agregar__imagen__boton" style="display: none;">
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formulario-login__input-container form-group">
+              <p>Categoría</p>
+              <select class="select" name="categoria" id="categoria" data-form-categoria>
+                            <option value="" selected disabled>--seleccionar categoria--</option>
+                            <option value="starwars">Star Wars</option>
+                            <option value="consolas">Consolas</option>
+                            <option value="diversos">Diversos</option>
+                        </select>
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+
+            <div class="formulario-login__input-container">
+              <input
+                class="formulario-agregar-producto-input"
+                type="text"
+                placeholder="Nombre del producto"
+                required
+                data-form-nombre
+              />
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formulario-login__input-container">
+              <input
+                class="formulario-agregar-producto-input"
+                type="text"
+                placeholder="Precio del producto"
+                required
+                data-form-precio
+              />
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formulario-login__input-container">
+              <input
+                class="formulario-agregar-producto-input"
+                type="text"
+                placeholder="Descripción del producto"
+                required
+                data-form-descripcion
+              />
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+
+            <input
+              class="boton-formulario-login"
+              type="submit"
+              name="enviar"
+              id="enviar-login"
+              value="Agregar producto"
+            />
+          </form>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="contenido__footer container">
+          <div class="contenido__footer_info">
+            <a href="../index.html"
+              ><img
+                class="header__logo"
+                src="../assets/img/Logo.svg"
+                alt="logo de alura geek"
+            /></a>
+            <ul class="footer_links">
+              <li class="footer__enlace">
+                <a href="./vistas/error404.html">Quienes somos</a>
+              </li>
+              <li class="footer__enlace">
+                <a href="./vistas/error404.html">Politica de privacidad</a>
+              </li>
+              <li class="footer__enlace">
+                <a href="./vistas/error404.html">Programa de fidelidad</a>
+              </li>
+              <li class="footer__enlace">
+                <a href="./vistas/error404.html">Nuestras Tiendas</a>
+              </li>
+              <li class="footer__enlace">
+                <a href="./vistas/error404.html">Quiero ser franquiciado</a>
+              </li>
+              <li class="footer__enlace">
+                <a href="./vistas/error404.html">Anuncie aqui</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_formulario">
+            <h3 class="footer_formulario__titulo">Hable con nosotros</h3>
+            <form action="">
+              <div class="formulario__input-container">
+                <input
+                  name="nombre"
+                  id="nombre"
+                  class="input inputs"
+                  type="text"
+                  placeholder=""
+                  required
+                  data-tipo="nombre"
+                />
+                <label class="input-label" for="nombre">Nombre</label>
+                <span class="input-message-error">Este campo no es valido</span>
+              </div>
+              <div class="formulario__textarea-container">
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  class="textarea inputs"
+                  rows="5"
+                  type="text"
+                  placeholder=""
+                  required
+                  data-tipo="mensaje"
+                ></textarea>
+                <label class="input-label" for="mensaje"
+                  >Escribe tu mensaje</label
+                >
+                <span class="input-message-error">Este campo no es valido</span>
+              </div>
+              <input
+                class="boton-form"
+                type="submit"
+                name="enviar"
+                id="enviar"
+                value="Enviar Mensaje"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="rodapie">
+      <p class="rodapie__texto">Desarrollado por Rendey Marte</p>
+      <p class="rodapie__texto">2023</p>
+    </footer>
+      <script type="module" src="./services/client-services.js"></script>
+    <script type="module" src="./controllers/crear-producto-controller.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
